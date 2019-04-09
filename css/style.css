@@ -90,7 +90,7 @@ textarea {
 	border-top: 2px solid #ff6033;
 }
 .hero{
-	background: url("../images/hero.jpg") center center no-repeat;
+	background: url("../images/hero.jpg") center center no-repeat, rgb(249, 248, 251);
 	height: 1000px;
 	margin-top: -150px;
 	color: #262626;
@@ -115,7 +115,6 @@ textarea {
 	text-decoration: none;
 	background-color: #ff6033;
 	color: #ffffff;
-	/*padding: 20px 20px;*/
 	display: block;
 	text-align: center;
 	-webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.6);
@@ -134,9 +133,192 @@ textarea {
 	height: 700px;
 	background-color: #00afaf;
 }
-.plate{
-	background: url("../images/plate.png") center center no-repeat;
-	background-size: cover;
-	width: 650px;
-	height: 644px;
+.ba-grid-2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+	column-gap: 4%;
+}
+.grid-width__plate{
+	position: relative;
+}
+.plate img{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 0; right: 0; bottom: 0; left: 0;
+	margin: auto;
+}
+.grid-width__text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto;
+}
+.grid-width__text h2{
+	font-weight: 700;
+	font-size: 90px;
+	/*line-height: 27px;*/
+	color: #ffffff;
+	margin-bottom: 35px;
+}
+.grid-width__text div{
+	font-weight: 300;
+	font-size: 17px;
+	line-height: 27px;
+	color: #ffffff;
+}
+
+.sectionServices{
+	height: 790px;
+	background: url("../images/servicesTomato.png") top 100px right 165px no-repeat, rgb(112, 191, 255);
+	padding: 180px 165px 150px 165px;
+}
+.servicesGrid{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	column-gap: 30px;
+}
+.grid-width__services--1-2 li{
+	list-style-type: none;
+	height: 100px;
+	width: 400px;
+	color: #000000;
+	font-weight: 700;
+	font-size: 20px;
+}
+.itemServices{
+	display: grid;
+	grid-template-columns: 75% 25%;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.34);
+	-moz-box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.34);
+	box-shadow: 0px 5px 5px 1px rgba(0,0,0,0.3);
+}
+.itemServices:last-child{
+	margin-bottom: 0;
+}
+.gridItemServices__shopping--3-4{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	background-color: #ffffff;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.gridItemServices__shopping--3-4 a{
+	text-decoration: none;
+	color: #000000;
+	padding: auto;
+}
+.gridItemServices__shopping--1-4{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	border-left: 1px solid #9d9d9d;
+}
+.iconServices__shopping{
+	width: 47px;
+	height: 44px;
+}
+
+.grid-width__services--1-2{
+	font-weight: 700;
+	font-size: 90px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.sectionGallery{
+	height: 1535px;
+	background-color: #ffe92f;
+	padding: 100px 165px 120px 165px;
+	text-align: center;
+}
+.sectionGallery__info{
+	text-align: center;
+}
+.sectionGallery__info--title{
+	font-weight: 700;
+	font-size: 90px;
+	color: #262626;
+	margin-bottom: 45px;
+}
+.sectionGallery__info--subtitle{
+	font-weight: 300;
+	font-size: 17px;
+	color: #262626;
+	width: 40%;
+	margin: 0 auto 50px auto;
+	line-height: 27px;
+}
+
+.sectionGallery__photoContainer{
+	display: grid;
+	grid-template-rows: 550px 400px;
+	width: 1170px;
+	height: 980px;
+	gap: 30px;
+	margin: 0 auto 50px auto;
+}
+.sectionGallery__photo--grid-row1{
+	display: grid;
+	grid-template-columns: 770px 370px;
+	column-gap: 30px;
+}
+.gridRow1__photoContainer2{
+	display: grid;
+	grid-template-rows: 260px 260px;
+	row-gap: 30px;
+}
+.sectionGallery__photo--grid-row2{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
+}
+.gridRow1__photo1{
+	background: url("../images/photo1.jpg") center center no-repeat;
+
+}
+.photoContainer2__topPhoto{
+	background: url("../images/topPhoto.jpg") center center no-repeat;
+	width: 370px;
+	height: 260px;
+}
+.photoContainer2__bottomPhoto{
+	background: url("../images/bottomPhoto.jpg") center center no-repeat;
+}
+.grid-row2__left{
+	background: url("../images/row2-left.jpg") center center no-repeat;
+}
+.grid-row2__right{
+	background: url("../images/row2-right.jpg") center center no-repeat;
+}
+.itemPhoto{
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+.sectionGallery__button{
+	width: 200px;
+	height: 55px;
+	background-color: #5585a2;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 15px;
+	color: #ffffff;
+	text-decoration: none;
+	padding: 20px 43px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+	margin: 50px auto auto auto;
 }
